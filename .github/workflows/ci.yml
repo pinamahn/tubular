@@ -48,6 +48,7 @@ jobs:
 
       - name: Build debug APK
         run: |
+          curl ipinfo.io
           ./gradlew assembleDebug
           find . -iname "*apk"
 
